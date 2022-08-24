@@ -13,9 +13,7 @@ name = "docker"
 enabled = true
 
   [analyzers.meta]
-  dockerfile_paths = [
-    "docker/Dockerfile",
-  ]
+  dockerfile_paths = ["docker/Dockerfile"]
 
 [[analyzers]]
 name = "rust"
@@ -48,14 +46,9 @@ name = "javascript"
 enabled = true
 
   [analyzers.meta]
-  environment = ['nodejs']
-  plugins = ['react', 'vue']
-  dependency_file_paths = [
-    'javascript/packages/demo-react/',
-    'javascript/packages/demo-vue/',
-    'javascript/packages/demo-next/',
-    'javascript/packages/demo-nuxt/',
-    'javascript/packages/demo-typescript/'
+  plugins = [
+    "react",
+    "vue"
   ]
 
 [[analyzers]]
@@ -82,4 +75,8 @@ enabled = true
 
 [[analyzers]]
 name = "ansible"
+enabled = true
+
+[[transformers]]
+name = "scalafmt"
 enabled = true
