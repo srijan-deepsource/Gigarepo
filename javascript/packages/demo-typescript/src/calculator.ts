@@ -1,5 +1,5 @@
 export default class Calculator {
-  static sum(a: number = 0, b: number) {
+  static sum(a = 0, b: number) {
     return a + b;
   }
 
