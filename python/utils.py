@@ -8,6 +8,7 @@ def side_height(length, breadth):
 
 
 def all_primes(nums):
+
     def is_even(x):
         return x % 2 == 0
 
@@ -61,3 +62,6 @@ def copy_file(file1, file2):
     with open(file1, "rb") as f1:
         with open(file2, "wb") as f2:
             f2.write(f1.read())
+
+
+breakpoint()
