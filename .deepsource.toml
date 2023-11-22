@@ -1,5 +1,8 @@
 version = 1
 
+exclude_patterns = ["**/foo/**"]
+test_patterns = ["**/test/**"]
+
 [[analyzers]]
 name = "test-coverage"
 enabled = true
